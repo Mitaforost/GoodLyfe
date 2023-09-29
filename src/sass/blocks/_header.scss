@@ -1,0 +1,41 @@
+.header{
+  height: 100px;
+  background-color: $main-color;
+}
+.navigation{
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+
+  &__logo{
+    display: block;
+    color: #FFF;
+    font-size: 40px;
+    font-weight: 800;
+    margin-right: 170px;
+    span{
+      color: #FFC1D8;
+    }
+  }
+  &__link{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    padding-left: 0;
+    &__tab{
+      a{
+        color: #FFF;
+        font-weight: 400;
+        text-decoration: none;
+        margin-right: 75px;
+      }
+    }
+
+  }
+}
