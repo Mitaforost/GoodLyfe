@@ -1,0 +1,21 @@
+.carousel {
+  min-height: 700px;
+  &__inner {
+    &__img{
+      background: center (center/cover) no-repeat;
+      width: 100%;
+    }
+  }
+
+  .slick-dots, .slick-next {
+    display: flex;
+    position: absolute;
+    bottom: 20px;
+    margin: 0 auto;
+  }
+
+  .slick-next {
+    //right: -66px;
+    //left: auto;
+  }
+}
