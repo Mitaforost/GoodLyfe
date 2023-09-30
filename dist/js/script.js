@@ -1,17 +1,12 @@
-// $(document).ready(function (){
-//     $('.carousel__inner').slick(
-//         {
-//             speed: 1200,
-//             adaptiveHeight: true,
-//             responsive: [
-//                 {
-//                     breakpoint: 992,
-//                     settings: {
-//                         dots: true,
-//                         arrows: false
-//                     }
-//                 }
-//             ]
-//         }
-//     )
-// })
+$(document).ready(function (){
+    $('.carousel__inner').slick(
+        {
+            arrows: false,
+            dots: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 5000,
+        }
+    )
+})
