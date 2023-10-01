@@ -1,6 +1,8 @@
 .carousel {
   height: 700px;
   width: 100%;
+  position: relative;
+  overflow: hidden;
   &__inner {
     overflow: hidden;
     position: relative;
@@ -42,6 +44,37 @@
       height: 12px;
       background-color: #FFFFFF;
       border-radius: 50%;
+    }
+  }
+  &__welcome{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    width: 700px;
+    text-align: center;
+    h1{
+      color: #FFF;
+      font-size: 70px;
+      font-weight: 800;
+      line-height: 110%;
+      span{
+        color: var(--Sub-Pink, #FFC1D8);
+      }
+    }
+    &__button{
+      margin-top: 20px;
+      color: #FFF;
+      text-align: center;
+      font-size: 16px;
+      font-weight: 600;
+      width: 240px;
+      height: 70px;
+      flex-shrink: 0;
+      border-radius: 40px;
+      background: $main-color;
+      border: none;
     }
   }
 }
