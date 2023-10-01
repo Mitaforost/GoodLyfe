@@ -1,0 +1,28 @@
+.sport{
+  margin-top: 100px;
+  height: 500px;
+}
+.meet{
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  height: 500px;
+  &__images{
+    position: relative;
+    width: 500px;
+    &__lifting{
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    &__doing{
+      position: absolute;
+      z-index: 10;
+      bottom: 0;
+      right: 0;
+    }
+  }
+  &__text{
+    width: 500px;
+  }
+}
