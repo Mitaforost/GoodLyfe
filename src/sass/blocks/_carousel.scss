@@ -54,14 +54,24 @@
     z-index: 1;
     width: 700px;
     text-align: center;
-    h1{
+    &__title{
       color: #FFF;
+      width: 100%;
       font-size: 70px;
       font-weight: 800;
       line-height: 110%;
       span{
         color: var(--Sub-Pink, #FFC1D8);
       }
+    }
+    &__desc{
+      margin: 0 auto;
+      width: 500px;
+      margin-top: 20px;
+      color: #FFF;
+      text-align: center;
+      font-size: 17px;
+      font-weight: 600;
     }
     &__button{
       margin-top: 20px;
@@ -77,4 +87,7 @@
       border: none;
     }
   }
+}
+.second{
+  width: 100%;
 }
