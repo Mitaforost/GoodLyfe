@@ -3,6 +3,11 @@
   height: 500px;
   margin-bottom: 100px;
 }
+.premium{
+  margin-top: 100px;
+  height: 500px;
+  margin-bottom: 100px;
+}
 .meet{
   display: flex;
   position: relative;
@@ -15,12 +20,17 @@
       position: absolute;
       top: 0;
       left: 0;
+      height: 300px;
+      &:last-child{
+        z-index: 11;
+      }
     }
     &__doing{
       position: absolute;
       z-index: 10;
       bottom: 0;
       right: 0;
+      height: 300px;
     }
   }
   &__text{
