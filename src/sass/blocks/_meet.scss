@@ -8,26 +8,12 @@
   position: relative;
   justify-content: space-between;
   height: 500px;
-  &__images-one{
-    position: relative;
-    width: 50%;
-    img{
-      &:first-child{
-        width: 340px;
-      }
-      &:last-child{
-        position: absolute;
-        right: 80px;
-        bottom: 0;
-        width: 240px;
-      }
-    }
-  }
   &__images{
     position: relative;
     width: 50%;
     img{
       &.image1{
+        position: absolute;
         max-width: 340px;
       }
       &.image2{
@@ -38,6 +24,7 @@
       }
       &.image3{
         position: absolute;
+        left: 0;
         max-width: 440px;
         z-index: 4;
       }
