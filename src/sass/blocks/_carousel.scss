@@ -1,5 +1,4 @@
 .carousel {
-  height: 700px;
   width: 100%;
   position: relative;
   overflow: hidden;
@@ -9,12 +8,16 @@
     &__img{
       width: 100%;
       background: center (center/cover) no-repeat;
-      height: 700px;
+      height: 100%;
       object-fit: cover;
     }
   }
   .slick-track{
     display: flex;
+    max-height: 700px;
+  }
+  .slick-list{
+    height: 100%;
   }
   .slick-dots{
     padding: 0;
@@ -30,6 +33,7 @@
       list-style-type: none;
       &.slick-active{
         button{
+          z-index: 30;
           width: 17px;
           height: 17px;
           background-color: $main-color;
@@ -67,7 +71,7 @@
     &__desc{
       margin: 0 auto;
       width: 500px;
-      margin-top: 20px;
+      padding-top: 20px;
       color: #FFF;
       text-align: center;
       font-size: 17px;

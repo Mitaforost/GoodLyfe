@@ -1,11 +1,11 @@
 .footer{
   background-color: #0B0D17;
   &__flex{
-    padding: 100px 0 100px 0;
+    padding: 100px 0;
     display: flex;
     justify-content: space-between;
     &__text{
-      width: 250px;
+      width: 200px;
       .title{
         color: #FFF;
         font-size: 26px;
@@ -34,8 +34,8 @@
       }
     }
     &__links{
+      width: 200px;
       .title{
-        width: 250px;
         color: #FFFFFF;
         font-size: 20px;
         font-weight: 500;
@@ -53,6 +53,7 @@
           }
           img{
             margin-right: 10px;
+            object-fit: none;
           }
           a{
             text-decoration: none;

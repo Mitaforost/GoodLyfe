@@ -1,36 +1,52 @@
 .sport{
-  margin-top: 100px;
+  margin: 100px 0;
   height: 500px;
-  margin-bottom: 100px;
-}
-.premium{
-  margin-top: 100px;
-  height: 500px;
-  margin-bottom: 100px;
+
 }
 .meet{
   display: flex;
   position: relative;
   justify-content: space-between;
   height: 500px;
-  &__images{
+  &__images-one{
     position: relative;
-    width: 40%;
-    &__lifting{
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 300px;
+    width: 50%;
+    img{
+      &:first-child{
+        width: 340px;
+      }
       &:last-child{
-        z-index: 11;
+        position: absolute;
+        right: 80px;
+        bottom: 0;
+        width: 240px;
       }
     }
-    &__doing{
-      position: absolute;
-      z-index: 10;
-      bottom: 0;
-      right: 0;
-      height: 300px;
+  }
+  &__images{
+    position: relative;
+    width: 50%;
+    img{
+      &.image1{
+        max-width: 340px;
+      }
+      &.image2{
+        position: absolute;
+        right: 80px;
+        bottom: 0;
+        max-width: 240px;
+      }
+      &.image3{
+        position: absolute;
+        max-width: 440px;
+        z-index: 4;
+      }
+      &.image4{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        max-width: 420px;
+      }
     }
   }
   &__text{
@@ -57,7 +73,6 @@
       border-radius: 40px;
       font-size: 16px;
       font-weight: 600;
-      line-height: 37px;
     }
   }
 }
