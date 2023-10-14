@@ -2,6 +2,7 @@
   width: 100%;
   height: 100px;
   position: fixed;
+  z-index: 5;
   background-color: $main-color;
 }
 .navigation{
@@ -15,9 +16,6 @@
     display: block;
     color: #FFF;
     margin-right: 170px;
-    h4{
-      font-weight: 800;
-    }
     &__text{
       color: #FFC1D8;
     }

@@ -1,97 +1,98 @@
-.carousel {
+.carousel{
   width: 100%;
-  position: relative;
   overflow: hidden;
+  height: 100vh;
+  padding-top: 100px;
+  position: relative;
   &__inner {
-    overflow: hidden;
     position: relative;
-    &__img{
+    height: 100%;
+    .carousel__slide::before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
       width: 100%;
-      background: center (center/cover) no-repeat;
       height: 100%;
+      background: rgba(0, 0, 0, 0.05);
+      z-index: 1;
+    }
+    .carousel__img{
+      position: relative;
+      width: 100%;
       object-fit: cover;
     }
   }
   .slick-track{
     display: flex;
-    max-height: 700px;
+    height: inherit;
   }
   .slick-list{
+    height: inherit;
+  }
+  .draggable{
     height: 100%;
   }
   .slick-dots{
-    padding: 0;
     position: absolute;
-    bottom: 20px;
+    bottom: 35px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 3;
+    padding: 0;
+    width: 100%;
     li{
       margin: 0 8px;
       list-style-type: none;
+      button{
+        font-size: 0;
+        width: 12px;
+        height: 12px;
+        border: none;
+        border-radius: 100%;
+      }
       &.slick-active{
         button{
-          z-index: 30;
           width: 17px;
           height: 17px;
           background-color: $main-color;
         }
       }
     }
-    button{
-      border: 0;
-      padding: 0;
-      font-size: 0;
-      width: 12px;
-      height: 12px;
-      background-color: #FFFFFF;
-      border-radius: 50%;
-    }
   }
-  &__welcome{
+  &__info{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
-    width: 700px;
+    width: 100%;
     text-align: center;
-    &__title{
-      color: #FFF;
-      width: 100%;
-      font-size: 70px;
-      font-weight: 800;
-      line-height: 110%;
-      span{
-        color: var(--Sub-Pink, #FFC1D8);
+    padding: 0 15px;
+    .carousel__title{
+      color: #FFFFFF;
+      .title-color{
+        color: #FFC1D8;
       }
     }
-    &__desc{
-      margin: 0 auto;
+    .carousel__subtitle{
       width: 500px;
-      padding-top: 20px;
-      color: #FFF;
-      text-align: center;
-      font-size: 17px;
-      font-weight: 600;
-    }
-    &__button{
-      margin-top: 20px;
-      color: #FFF;
-      text-align: center;
-      font-size: 16px;
-      font-weight: 600;
-      width: 240px;
-      height: 70px;
-      flex-shrink: 0;
-      border-radius: 40px;
-      background: $main-color;
-      border: none;
+      margin: 20px auto;
+      color: #FFFFFF;
     }
   }
-}
-.second{
-  width: 100%;
+  .subline{
+    position: absolute;
+    z-index: 1;
+    bottom: -1px;
+    fill: #FFFFFF;
+    width: 100%;
+    &-line{
+      width: 100%;
+      height: auto;
+    }
+  }
 }
