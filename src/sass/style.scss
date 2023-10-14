@@ -56,6 +56,9 @@ a:hover,
 button:hover {
   cursor: pointer;
 }
+.mr40{
+  margin-right: 40px;
+}
 @import "blocks/header";
 @import "blocks/title";
 @import "blocks/button";
