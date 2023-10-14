@@ -1,27 +1,27 @@
-.button{
-  color: $main-color;
-  background-color: #FFFFFF;
-  font-size: 16px;
-  font-weight: 400;
-  padding: 15px 60px;
-  border-radius: 50px;
+.btn{
+  width: 237px;
+  height: 68px;
+  flex-shrink: 0;
+  border-radius: 200px;
   border: none;
-}
-.navigation__form{
-  height: 20px;
-  display: flex;
-  align-items: flex-start;
-  &__button{
-    align-items: center;
-    padding: 0;
-    font-size: 16px;
-    font-weight: 400;
-    border: none;
-    background-color: transparent;
-    img{
-      width: 18px;
-      height: 18px;
-      display: inline-block;
-    }
+  background: $main-color;
+  &:hover{
+    background-color: rgba(190, 40, 94, 1);
+    box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.06);
+    color: #FFFFFF;
+    transition: all 0.3s;
   }
+  &:focus{
+    fill: var(--Premium-Pink, #E43071);
+    stroke-width: 8px;
+    stroke: var(--Pink-Subtle, #FFDAE7);
+    opacity: 0.8;
+  }
+}
+.btn-login{
+  width: 166px;
+  height: 50px;
+  flex-shrink: 0;
+  background: #FFFFFF;
+  color: $main-color;
 }
