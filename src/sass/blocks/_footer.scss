@@ -1,94 +1,113 @@
 .footer{
   background-color: #0B0D17;
-  &__flex{
+  &-container{
     padding: 100px 0;
     display: flex;
     justify-content: space-between;
-    &__text{
+    .footer__info{
+      display: flex;
+      flex-direction: column;
       width: 200px;
-      .title{
+      .footer__title{
         color: #FFF;
-        font-size: 26px;
-        font-weight: 800;
-        span{
+        h4{
+          font-size: 25px;
+          line-height: 30px;
+        }
+        &-color{
           color: #E43071;
         }
       }
-      .desc{
+      .footer__desc{
         padding-top: 25px;
         color: #D9DBE1;
         font-size: 14px;
         font-weight: 400;
         line-height: 24px;
       }
-      .media{
+      .footer__social{
         padding-top: 25px;
         display: flex;
-        &__circle{
+        &-circle{
+          display: flex;
           width: 25px;
           height: 25px;
           align-items: center;
           justify-content: center;
           margin-right: 10px;
+          border-radius: 100%;
+          background-color: rgba(255, 255, 255, .1);
+          .footer__social-icon{
+            fill: #FFFFFF;
+          }
         }
       }
     }
-    &__links{
+    .footer__links{
       width: 200px;
-      .title{
+      .footer__subtitle{
         color: #FFFFFF;
-        font-size: 20px;
-        font-weight: 500;
+        .subtitle{
+          font-size: 20px;
+          line-height: 30px;
+        }
       }
-      ul{
+      .footer__list{
         display: block;
         padding: 25px 0 0 0;
-        list-style-type: none;
-        li{
+        .more{
+          padding-top: 25px;
+        }
+        &-item{
           display: flex;
           margin: 0;
           padding-top: 12px;
           &:first-child{
             padding-top: 0;
           }
-          img{
+          .more-icon{
             margin-right: 10px;
             object-fit: none;
           }
-          a{
-            text-decoration: none;
+          .footer__link{
             color: #D9DBE1;
             font-size: 14px;
             font-weight: 400;
+            line-height: 24px;
           }
         }
       }
     }
   }
-  &__info{
-    padding: 25px 0 25px 0;
+  &__author{
+    padding: 0 0 25px 0;
     display: flex;
     justify-content: space-between;
-    &__year{
+    .footer__caption{
       color: #D9DBE1;
       font-size: 14px;
       font-weight: 400;
+      line-height: normal;
     }
-    &__history{
+    .footer__links-meta{
       display: flex;
-      a{
+      .meta-link{
         color: #D9DBE1;
         font-size: 14px;
         font-weight: 400;
-        text-decoration: none;
-        padding: 0 8px 0 8px;
-        border-right: 1px #FFFFFF solid;
+        line-height: normal;
         &:first-child{
-          padding: 0 8px 0 0;
+          margin: 0;
         }
         &:last-child{
-          border: none;
-          padding: 0 0 0 8px;
+          &::after {
+            content: '';
+            margin-right:8px;
+          }
+        }
+        &::after {
+          content: '|';
+          margin: 0 8px;
         }
       }
     }

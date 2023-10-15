@@ -1,54 +1,66 @@
 .phone{
   background-color: $main-color;
-  .phone__info-app {
-    //height: 500px;
-    display: flex;
-    justify-content: space-between;
-
-    .phone__text {
-      &__title {
-        margin-top: 100px;
-        color: #FFF;
-        font-size: 40px;
-        font-weight: 700;
+  &-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 40px;
+    .phone__info {
+      padding: 100px 0;
+      max-width: 490px;
+      margin: auto 0;
+      &-title {
+        color: #FFFFFF;
       }
-
-      &__desc {
+      &-desc {
         margin-top: 20px;
-        max-width: 480px;
         color: #FFF;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 37px;
-
-        span {
+      }
+      .phone__promo {
+        padding-top: 20px;
+        &-subtitle{
           color: rgba(255, 255, 255, 0.60);
         }
-      }
-
-      &__link {
-        margin-top: 10px;
-        display: flex;
-        cursor: pointer;
-        a{
-          display: block;
-        }
-        .link__app:nth-child(1) {
-          margin-right: 10px;
+        .phone__links{
+          display: flex;
+          .phone__link{
+            width: 135px;
+            height: 40px;
+            flex-shrink: 0;
+            &:first-child{
+              margin-right: 10px;
+            }
+            &-store{
+              width: 100%;
+              height: 100%;
+            }
+          }
         }
       }
     }
-
     .phone__media {
-      img{
+      display: flex;
+      object-fit: cover;
+      &-photo{
+        position: relative;
         object-fit: cover;
-        min-width: 180px;
-        min-height: 340px;
         &:first-child{
-          margin-top: -40px;
+          transform: translateY(-40px);
         }
         &:last-child{
-          margin-bottom: -80px;
+          transform: translateY(100px);
+          &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background: #EDEDED;
+          }
+        }
+        .phone__photo{
+          width: 100%;
+          height: 100%
         }
       }
     }
