@@ -32,9 +32,56 @@
             <input class="header-search__input" type="text" placeholder="Search" name="search">
             <button class="header-search__button" type="submit"><img class="header-search__icon" src="icons/Search.png" alt="search"></button>
         </form>
-        <button class="primary-btn btn-login">
+        <button class="primary-btn login-btn">
             Login
         </button>
+<!--        <div class="promo">-->
+<!--            <div class="hamburger">-->
+<!--                <span class="hamburger__line"></span>-->
+<!--                <span class="hamburger__line"></span>-->
+<!--                <span class="hamburger__line"></span>-->
+<!--            </div>-->
+<!--            <div class="container">-->
+<!--                <div class="title title_fs16 promo__subtitle">Меня зовут Данила Захарчук</div>-->
+<!--                <h1 class="title title_fs48 promo__title">Я web-разработчик-->
+<!--                    из города Минск</h1>-->
+<!--                <div class="promo__btns">-->
+<!--                    <a href="#" class="promo__link btn">Портфолио</a>-->
+<!--                    <a href="#" class="promo__link">Про меня</a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+        <div class="header__hamburger">
+            <span class="header__line"></span>
+            <span class="header__line"></span>
+            <span class="header__line"></span>
+        </div>
+        <div class="header__active header-active active">
+            <div class="header__block">
+                <div class="header__close">
+                    <span class="header__line"></span>
+                    <span class="header__line"></span>
+                </div>
+                <ul class="header-active__menu">
+                    <li class="header-active__item">
+                        <a class="header-active__link" href="#">Classess</a>
+                    </li>
+                    <li class="header-active__item">
+                        <a class="header-active__link" href="#">Timetable</a>
+                    </li>
+                    <li class="header-active__item">
+                        <a class="header-active__link" href="#">Clubs</a>
+                    </li>
+                    <li class="header-active__item">
+                        <a class="header-active__link" href="#">Nutrition</a>
+                    </li>
+                    <li class="header-active__item">
+                        <a class="header-active__link" href="#">Free Trial</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header__overlay"></div>
+        </div>
     </div>
 </header>
 <main>
@@ -106,9 +153,6 @@
                 See the benefits
             </button>
         </div>
-        <div class="carousel__line">
-            <img class="carousel__icon" src="icons/subline.svg" alt="line">
-        </div>
     </section>
     <section class="meet">
         <div class="container">
@@ -135,17 +179,17 @@
             <div class="stories__text">
                 <p class="stories__title">Real Stories from
                     Real Customers</p>
-                <p class="stories__subtitle">
+                <p class="stories__subtitle subtitle">
                     Be inspired with these experiences.
                 </p>
             </div>
             <div class="stories__cards">
                 <div class="stories__group">
-                    <p class="stories__title">3Kg lost!</p>
+                    <p class="stories__heading">3Kg lost!</p>
                     <div class="stories__info stories-info">
                         <div class="stories-info__quotes">“</div>
                         <div class="stories-info__aside">
-                            <p class="stories-info__text">Lorem ipsum dolor sit amet,
+                            <p class="stories-info__text subtitle">Lorem ipsum dolor sit amet,
                                 consectetur adipiscing elit. Vivamus eget
                                 lectus urna. Nulla magna tortor, bibendum
                                 in molestie sed, gravida nec felis. Sed id
@@ -161,11 +205,11 @@
                     </div>
                 </div>
                 <div class="stories__group">
-                    <p class="stories__title">17Kg lost!</p>
+                    <p class="stories__heading">17Kg lost!</p>
                     <div class="stories__info stories-info">
                         <div class="stories-info__quotes">“</div>
                         <div class="stories-info__aside stories-info__aside_width">
-                            <p class="stories-info__text">Lorem ipsum dolor sit amet,
+                            <p class="stories-info__text subtitle">Lorem ipsum dolor sit amet,
                                 consectetur adipiscing elit. Vivamus eget
                                 lectus urna. Nulla magna tortor, bibendum
                                 in mo</p>
@@ -180,11 +224,11 @@
                     </div>
                 </div>
                 <div class="stories__group">
-                    <h5 class="stories__title">43Kg lost!</h5>
+                    <h5 class="stories__heading">43Kg lost!</h5>
                     <div class="stories__info stories-info">
                         <div class="stories-info__quotes">“</div>
                         <div class="stories-info__aside">
-                            <p class="stories-info__text">Lorem ipsum dolor sit amet,
+                            <p class="stories-info__text subtitle">Lorem ipsum dolor sit amet,
                                 consectetur adipiscing elit.</p>
                             <div class="stories-info__person">
                                 <img class="stories-info__photo" alt="photo" src="img/boy.jpg">
@@ -201,20 +245,20 @@
     </section>
     <section class="phone">
         <div class="container">
-            <div class="phone-container">
+            <div class="phone__container">
                 <div class="phone__info">
-                    <h4 class="phone__info-title">Don’t forget our app</h4>
-                    <p class="phone__info-desc">Lorem ipsum dolor sit amet, consectetur
+                    <h4 class="phone__title">Don’t forget our app</h4>
+                    <p class="phone__desc">Lorem ipsum dolor sit amet, consectetur
                         adipiscing elit. Vivamus eget lectus urna.
                         Nulla magna tortor, bibendum in molestie sed,
                         gravida nec felis. Sed id egestasegestas risus,
                         ut imperdiet augue.
                     </p>
                     <div class="phone__promo">
-                        <p class="phone__promo-subtitle">Download now:</p>
+                        <p class="phone__subtitle">Download now:</p>
                         <div class="phone__links">
-                            <a href="#" class="phone__link"><img src="icons/GroupGoogle.png" alt="store" class="phone__link-store"></a>
-                            <a href="#" class="phone__link"><img src="icons/GroupApp.png" alt="store" class="phone__link-store"></a>
+                            <a href="#" class="phone__link"><img src="icons/GroupGoogle.png" alt="store" class="phone__store"></a>
+                            <a href="#" class="phone__link"><img src="icons/GroupApp.png" alt="store" class="phone__store"></a>
                         </div>
                     </div>
                 </div>

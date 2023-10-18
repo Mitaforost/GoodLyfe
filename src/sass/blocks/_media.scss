@@ -1,224 +1,100 @@
-//@media (max-width: 1380px) {
-//  .navigation{
-//    padding: 0 15px;
-//    &__logo{
-//      margin-right: 100px;
-//    }
-//    &__link{
-//      &__tab{
-//        a{
-//          margin-right: 40px;
-//        }
-//      }
-//    }
-//  }
-//  .container{
-//    padding: 0 15px;
-//  }
-//}
-//@media (max-width: 1200px) {
-//  .container {
-//    width: 100%;
-//    margin: 0 auto;
-//    padding: 0 15px;
-//  }
-//  .navigation{
-//    &__logo{
-//      margin-right: 50px;
-//    }
-//    &__link{
-//      &__tab{
-//        a{
-//          margin-right: 20px;
-//        }
-//      }
-//    }
-//  }
-//  .phone{
-//    .phone__info-app{
-//      img{
-//        &:first-child{
-//          margin-top: -40px;
-//        }
-//        &:last-child{
-//          margin-bottom: -60px;
-//        }
-//      }
-//    }
-//  }
-//}
-//@media (max-width: 992px) {
-//  .navigation{
-//    padding: 0 15px;
-//    &__logo{
-//      font-size: 32px;
-//      margin-right: 30px;
-//    }
-//    &__link{
-//      &__tab{
-//        a{
-//          font-size: 14px;
-//          margin-right: 20px;
-//        }
-//      }
-//    }
-//  }
-//  .button{
-//    padding: 8px 32px;
-//    font-size: 14px;
-//  }
-//  .navigation__form{
-//    input{
-//      font-size: 14px;
-//    }
-//    height: 14px;
-//    &__button{
-//      font-size: 15px;
-//      img{
-//        height: 14px;
-//        width: 14px;
-//      }
-//    }
-//  }
-//  .carousel{
-//    &__welcome{
-//      &__title{
-//        font-size: 62px;
-//      }
-//      &__desc{
-//        font-size: 15px;
-//      }
-//      &__button{
-//        font-size: 15px;
-//        width: 200px;
-//        height: 60px;
-//      }
-//    }
-//  }
-//  .sport{
-//    margin: 80px 0;
-//    .meet{
-//      &__text{
-//        &__title{
-//          font-size: 32px;
-//        }
-//        &__desc{
-//          font-size: 15px;
-//          line-height: 30px;
-//        }
-//        &__button{
-//          margin-top: 30px;
-//          width: 200px;
-//          height: 58px;
-//          font-size: 15px;
-//        }
-//      }
-//      &__images{
-//        .image1{
-//          height: auto;
-//          width: 80%;
-//        }
-//        .image2{
-//          right: 0;
-//          height: auto;
-//          width: 60%;
-//        }
-//        .image3{
-//          height: auto;
-//          width: 90%;
-//        }
-//        .image4{
-//          height: auto;
-//          width: 90%;
-//        }
-//      }
-//    }
-//  }
-//  .stories{
-//    padding: 80px 0;
-//    &__title{
-//      font-size: 42px;
-//    }
-//    &__desc{
-//      font-size: 15px;
-//    }
-//    &__display-grid{
-//      .about-card{
-//        &__title{
-//          font-size: 32px;
-//        }
-//        &__grid{
-//          .quotes{
-//            font-size: 48px;
-//          }
-//          .desc{
-//            margin-top: 10px;
-//            font-size: 15px;
-//            line-height: 25px;
-//          }
-//        }
-//      }
-//    }
-//  }
-//  .phone{
-//    .container{
-//      padding: 0;
-//    }
-//    .phone__info-app{
-//      padding: 0 15px;
-//      .phone__text{
-//        width: 40%;
-//        &__title{
-//          font-size: 32px;
-//        }
-//        &__desc{
-//          font-size: 15px;
-//          line-height: 25px;
-//        }
-//      }
-//      .phone__media{
-//        display: flex;
-//        img{
-//          &:first-child{
-//            margin-top: -40px;
-//          }
-//          &:last-child{
-//            margin-bottom: -90px;
-//          }
-//        }
-//      }
-//    }
-//  }
-//  .social{
-//    &__title{
-//      font-size: 32px;
-//    }
-//    &__media{
-//      &__circle{
-//        width: 100px;
-//        height: 100px;
-//      }
-//    }
-//  }
-//  .footer{
-//    &__flex{
-//      padding: 80px 0;
-//      &__text{
-//        max-width: 200px;
-//        .title{
-//          font-size: 22px;
-//        }
-//      }
-//      &__links{
-//        max-width: 200px;
-//        .title{
-//          font-size: 18px;
-//        }
-//      }
-//    }
-//  }
-//}
-//
+@media (max-width: 1440px) {
+  .header__container{
+    padding: 0 15px;
+    .header__logo{
+      margin-right: 100px;
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .header__container{
+    gap: 30px;
+    .header__logo{
+      margin-right: 20px;
+    }
+  }
+  .carousel__info{
+    .carousel__title{
+      font-size: 58px;
+    }
+  }
+}
+@media (max-width: 992px) {
+  body{
+    line-height: 32px;
+  }
+  .primary-btn{
+    width: 208px;
+    height: 56px;
+  }
+  .login-btn {
+    width: 146px;
+    height: 46px;
+  }
+  .subtitle{
+    font-size: 16px;
+  }
+  .header__container{
+    .header__logo{
+      font-size: 32px;
+      margin: 0;
+    }
+  }
+  .carousel__info{
+    h1{
+      font-size: 48px;
+    }
+    .carousel__title{
+      font-size: 46px;
+    }
+    .carousel__subtitle{
+      margin-top: 10px;
+    }
+    .carousel__btn{
+      margin-top: 10px;
+    }
+  }
+  .meet__container{
+    .meet__images{
+      .meet__photo{
+        &:last-child{
+          right: 0;
+        }
+      }
+    }
+  }
+  .stories{
+    .stories__text{
+      //max-width: 320px;
+      .stories__title{
+        font-size: 36px;
+      }
+    }
+    .stories__group{
+      .stories__heading{
+        font-size: 32px;
+      }
+    }
+  }
+}
+@media (max-width: 875px) {
+  .header__container{
+    gap: 20px;
+    .header__logo{
+      margin: 0 auto;
+    }
+    .header__menu{
+      display: none;
+    }
+    .header__hamburger{
+      display: flex;
+    }
+    .header__search{
+      margin-right: 20px;
+      width: 140px;
+    }
+  }
+}
 //@media (max-width: 768px) {
 //  //.header{
 //  //  height: 70px;

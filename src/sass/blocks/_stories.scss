@@ -3,7 +3,7 @@
   background: linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%), #F4E3E9;
 }
 .stories__text{
-  width: 420px;
+  max-width: 420px;
   .stories__title{
     color: #424242;
     font-size: 48px;
@@ -13,9 +13,6 @@
   .stories__subtitle{
     margin-top: 10px;
     color: #424242;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: normal;
   }
 }
 .stories__cards{
@@ -35,7 +32,7 @@
       justify-self: end;
     }
   }
-  .stories__title{
+  .stories__heading{
     color: $main-color;
     max-width: 100%;
     font-size: 38px;
@@ -59,8 +56,6 @@
     .stories-info__text{
       margin-top: 15px;
       color: #424242;
-      font-size: 18px;
-      font-weight: 400;
       line-height: 32px;
     }
     .stories-info__person{
