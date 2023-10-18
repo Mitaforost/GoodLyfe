@@ -4,40 +4,43 @@
   position: fixed;
   z-index: 5;
   background-color: $main-color;
-}
-.navigation{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 100%;
-  width: 1400px;
-  margin: auto auto;
-  .logo{
+  &__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 1400px;
+    margin: auto auto;
+  }
+  &__logo{
     display: block;
-    color: #FFF;
     margin-right: 170px;
-    &__text{
+    color: #FFF;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: normal;
+    span{
       color: #FFC1D8;
     }
   }
-  .menu{
+  &__menu{
     display: flex;
     justify-content: space-between;
-    &-item{
+    .header-menu__item{
       margin-right: 50px;
       &:last-child{
         margin-right: 0;
       }
-    }
-    &-link{
-      color: #FFF;
+      .header-menu__link{
+        color: #FFF;
+      }
     }
   }
-  .search-form{
+  &__search {
     display: flex;
     align-items: center;
     width: 180px;
-    &__input{
+    .header-search__input{
       font-size: inherit;
       background-color: transparent;
       border: none;
@@ -49,12 +52,12 @@
         color: #FFF;
       }
     }
-    &__button{
+    .header-search__button{
       object-fit: cover;
       height: auto;
       background: transparent;
       border: none;
-      .button-search{
+      .header-search__icon{
         width: auto;
         height: 100%;
       }

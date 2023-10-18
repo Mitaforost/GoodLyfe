@@ -40,7 +40,7 @@
     .phone__media {
       display: flex;
       object-fit: cover;
-      &-photo{
+      .phone__photo{
         position: relative;
         object-fit: cover;
         &:first-child{
